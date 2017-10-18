@@ -4,40 +4,22 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="mobile/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="mobile/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<script src="js/bootstrap.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery-3.2.1.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="mobile/jquery.mobile-1.4.5.js"></script>
+	<script src="mobile/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/funciones.js"></script>
-	<script>
-		var start = function() {
-    screen.orientation.lock('landscape-primary').then(
-      startInternal,
-      function() {
-        alert('To start, rotate your screen to landscape.');
-
-        var orientationChangeHandler = function() {
-          if (!screen.orientation.type.startsWith('landscape')) {
-            return;
-          }
-          screen.orientation.removeEventListener('change', orientationChangeHandler);
-          startInternal();
-        }
-
-        screen.orientation.addEventListener('change', orientationChangeHandler);
-      });
-  }
-  window.onload = start;
-	</script>
-
-	
 </head>
-<body class="fondo_home">
+
+<body class="fondo_home" onload="orientacion()">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
