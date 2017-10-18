@@ -19,13 +19,11 @@
 	<script src="js/funciones.js"></script>
 
 <script>
-function orientacion(){
-  window.screen.orientation.lock("landscape");
-}
+	$( window ).orientationchange('landscape');
 </script>
 </head>
 
-<body class="fondo_home" onload="orientacion()">
+<body class="fondo_home">
 	<div data-role="page" id="home">
 		<div data-role="main" class="ui-content">
 			<div class="container-fluid">
