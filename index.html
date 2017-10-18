@@ -17,9 +17,14 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/funciones.js"></script>
+	<script>
+	function orientacion(){
+		window.screen.lockOrientation('landscape-primary');
+	}
+	</script>
 </head>
 
-<body class="fondo_home">
+<body class="fondo_home" onload="orientacion()">
 	<div data-role="page" id="home">
 		<div data-role="main" class="ui-content">
 			<div class="container-fluid">
