@@ -14,10 +14,30 @@
 	<script src="js/jquery-3.2.1.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/funciones.js"></script>
+	<script>
+		var start = function() {
+    screen.orientation.lock('landscape-primary').then(
+      startInternal,
+      function() {
+        alert('To start, rotate your screen to landscape.');
+
+        var orientationChangeHandler = function() {
+          if (!screen.orientation.type.startsWith('landscape')) {
+            return;
+          }
+          screen.orientation.removeEventListener('change', orientationChangeHandler);
+          startInternal();
+        }
+
+        screen.orientation.addEventListener('change', orientationChangeHandler);
+      });
+  }
+  window.onload = start;
+	</script>
 
 	
 </head>
-<body class="fondo_home" onload="orientacion()">
+<body class="fondo_home">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
