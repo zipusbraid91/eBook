@@ -1,3 +1,5 @@
-void orientacion(){
+
+function orientacion()
+{
 	window.screen.lockOrientation('landscape');
 }
