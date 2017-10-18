@@ -2,10 +2,10 @@
 
 .fondo_home{
 	background-image: url("../img/fondo_home.jpg");
-	background-position: center center;
+	background-position: center top;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 .logo_home{
