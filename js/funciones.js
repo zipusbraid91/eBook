@@ -1,5 +1,5 @@
 
 function orientacion()
 {
-	window.screen.lockOrientation('landscape');
+	window.screen.lockOrientation('landscape-primary');
 }
