@@ -1,26 +1,69 @@
+/* css propios*/
+
 @media screen and (max-width:1024px) and (min-width: 769px){
  body {
 	background-image: url('../img/fondo-ancho.jpg') !important;
  }
- nav{
- 	height: 40px !important;
- }
- .brand-logo{
- 	margin-top: -8px !important;
- 	font-size: 23px !important;
- }
-
  }
 @media only (max-width:768px){
  body {
 	background-image: url('../img/fondo-largo.jpg');
  }
 }
- 
-.fondo{
-	background-image: url('../img/fondo-largo.jpg');
-	background-position: center top;
+
+.fondo_home{
+	background-image: url("../img/fondo-largo.jpg");
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: 100% 100%;
+	background-size: cover;
 }
+
+.logo_home{
+	display:block;
+	margin:auto;
+
+}
+.align{
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+	margin-top:40%;
+}
+
+.main_btn{
+	border-bottom: 4px solid rgba(236,70,59,0.9);
+	border-top: 4px solid rgba(237,243,45,0.9);
+	border-radius: 40px 20px 20px 5px;
+	/*border-radius:0px;*/
+	text-align:center;
+	text-decoration: none;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	color: #FFF;
+	background-color: rgba(27,130,200,0.9);
+	padding: 7px 12px;
+	padding-top: 20px;
+	white-space: nowrap;
+	margin: 7px 5px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.main_btn:hover{
+	color:#ffffff;
+	background-color: rgba(27,130,200,0.5);
+	border:0px;
+}
+.a_home{
+	width: 350px;
+	height: 50px;
+}
+footer{
+	padding: 10px;
+	background-color: black;
+	color: white;
+}
+
